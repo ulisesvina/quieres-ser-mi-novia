@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(-90deg, #ff5e4f, #ef87ff);
+    color: #fff;
+}
+
+body div {
+    margin-top: 90px;
+}
+
+input {
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    width: 80px;
+    padding: 7.5px;
+    background: #000;
+    color: #fff;
+}
+
+#yes {
+    margin-left: -70px;
+}
+
+
+#no {
+    position: absolute;
+    margin-left: 5px;
+}

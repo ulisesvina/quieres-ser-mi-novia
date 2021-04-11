@@ -1,54 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>¿Quieres ser mi novia?</title>
 </head>
 <body>
-    <h1>
-        ¿Quieres ser mi novia?
-    </h1>
-    <input type="submit" value="Sí" id="si">
-    <input type="submit" value="No" id="no">
+    <div>
+        <h1>¿Quieres ser mi novia?</h1><br>
+        <input type="submit" id="yes" value="Sí">
+        <input type="submit" id="no" value="No">
+    </div>
+    <script src="js/main.js"></script>
 </body>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        margin-top: 25vh;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #fff;
-        background: linear-gradient(75deg, #ff0061, red);
-    }
-    input[type=submit] {
-        background: #000;
-        color: #fff;
-        border: 0;
-        outline: none;
-        padding: 7.5px;
-        width: 100px;
-        border-radius: 5px;
-    }
-    #no {
-        position: absolute;
-    }
-</style>
-<script>
-    const yesElem = document.querySelector("#si");
-    const noElem = document.querySelector("#no");
-    
-    const moveToRandom = () => {
-        let x = Math.floor(Math.random()*99);
-        let y = Math.floor(Math.random()*99);
-        noElem.style.left = x+'px';
-        noElem.style.top = y+'px';
-    }
-
-    yesElem.onclick = _ => alert("Ya sabía que querías");
-    noElem.onmouseover = _ => moveToRandom();
-    noElem.onclick = _ => moveToRandom();
-</script>
 </html>
